@@ -1,4 +1,7 @@
 body {
     background-color: lightblue;
-    background-image: url("kaas-large.png");
+    background-image: url("images/modernekunst.png");
  }
+ h1 {
+    color: yellow;
+  }
