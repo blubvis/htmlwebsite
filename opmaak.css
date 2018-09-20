@@ -9,12 +9,32 @@ header h1 {
     color: white;
     text-align: center;
     text-shadow: 5px 5px 7px #000000;
+}
+ul {
+    background: yellow;
+    padding: 10px;
+  }
+  
+  ul li {
+    background: yellowgreen;
+    padding: 5px;
+    border: solid 10px black;
+    display: inline;
+  }
+  
+  ul li a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  ul li a:hover {
+    color: #C0C0C0;
   }
   
   
 body {
     background-color: lightblue;
-    background-image: url("images/modernekunst.png");
+    background-repeat: no-repeat; 
     font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
 
  }
@@ -24,4 +44,40 @@ body {
 * {
   margin: 0px;
   padding: 0px;
-}  
+  box-sizing: border-box;
+} 
+section {
+    background-image: url("images/modernekunst.png");
+    height: 600px;
+    
+  }
+  section article {
+    border: 3px solid black;
+    border-radius: 0px 20px 20px 20px;
+    margin: 5px 10px 5px 10px;
+    padding: 10px;
+    background: white;
+  }
+  
+aside {
+    float: right;
+    height: 600px;
+    width: 25%;
+    background: #f0f0f0
+}
+  
+footer {
+    background: #F0F0F0;
+    
+    width: inherit;
+    height: 20px;
+  }
+  
+  footer h3 {
+    text-align: center;
+    font-weight: normal;
+    font-size: 90%;
+  }
+  
+
+  
