@@ -1,7 +1,11 @@
+* {
+    margin: 0px;
+    padding: 0px;
+  }
 #container {
     display: grid;
-    grid-template-columns: 1fr 5fr 1fr;
-    grid-template-rows: 1fr 3fr 3fr 1fr;
+    grid-template-columns: 15% 70% 15%;
+    grid-template-rows: 100px 300px 300px 30px;
     grid-template-areas: "hoofd hoofd hoofd"
                         "menu midden1 fotos"
                         "menu midden2 fotos"
@@ -13,29 +17,30 @@
   }
   #bovenbalk {
   grid-area: hoofd;
-    background-color: pink;
+    background-color: gray;
+       
     
   }
   
   #linkerkolom {
-    background-color: green;
+    background-color: darkgray;
     grid-area: menu;
   }
   
   #centrum1 {
-    background-color: yellow;
+    background-color: white;
     grid-area: midden1;
   }
   #centrum2 {
-    background-color: lightgreen;
+    background-color: white;
     grid-area: midden2;
   }
   
   #rechterkolom {
-    background-color: blue;
+    background-color: darkgray;
     grid-area: fotos;
   }
   #footer {
     grid-area: voet;
-    background-color: black;
+    background-color: gray;
   }
