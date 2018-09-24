@@ -3,24 +3,58 @@
     padding: 0px;
   }
 #container {
-    display: grid;
-    grid-template-columns: 15% 70% 15%;
-    grid-template-rows: 100px 300px 300px 30px;
-    grid-template-areas: "hoofd hoofd hoofd"
-                        "menu midden1 fotos"
-                        "menu midden2 fotos"
-                        "voet voet voet";
+  display: grid;
+  grid-template-columns: 15% 70% 15%;
+  grid-template-rows: 100px 300px 300px 30px;
+  grid-template-areas: "hoofd hoofd hoofd"
+                       "menu midden1 fotos"
+                       "menu midden2 fotos"
+                       "voet voet voet";
 
   }
-  .box {
+.box {
     min-height: 700px;
-  }
-  #bovenbalk {
+}
+body{
+  margin-top: 1vh;
+  margin-bottom: 1vh;
+  margin-left: 2vw;
+  margin-right: 2vw;
+
+  
+}
+#bovenbalk {
   grid-area: hoofd;
-    background-color: gray;
-       
-    
+  background-color: gray;
   }
+header h1 {
+  font-size: 300%;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  color: white;
+  text-align: center;
+  text-shadow: 5px 5px 7px #000000;
+}
+
+ul {
+    background: var(--medium);
+    padding: 10px;
+  }
+  
+ul li {
+  background: var(--light);
+  padding: 5px;
+  display: inline;
+}
+  
+ul li a {
+  color: white;
+  text-decoration: none;
+}
+  
+ul li a:hover {
+  color: var(--medium);
+}
+  
   
   #linkerkolom {
     background-color: darkgray;
