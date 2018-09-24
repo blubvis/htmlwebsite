@@ -5,10 +5,11 @@
 #container {
   display: grid;
   grid-template-columns: 15% 70% 15%;
-  grid-template-rows: 100px 300px 300px 30px;
+  grid-template-rows: 300px 50px 300px 300px 30px;
   grid-template-areas: "hoofd hoofd hoofd"
-                       "menu midden1 fotos"
-                       "menu midden2 fotos"
+                       "menu menu menu"
+                       "links midden1 fotos"
+                       "links midden2 fotos"
                        "voet voet voet";
 
   }
@@ -26,12 +27,23 @@ body{
 #bovenbalk {
   grid-area: hoofd;
   background-color: gray;
-  }
+  background-image: url("images/robot.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  
+}
 header h1 {
   font-size: 300%;
   font-family: Georgia, "Times New Roman", Times, serif;
   color: black;
-  text-align: center;}
+  text-align: center;
+  
+}
+#keuzemenu{
+  grid-area: menu;
+  background-color: gray;
+}
 
 ul {
     background: var(gray);
@@ -48,6 +60,7 @@ ul li a {
   color: black;
   text-decoration: none;
   background-color: lightgray;
+  border: 2px black;
   
 }
   
@@ -58,12 +71,13 @@ ul li a:hover {
   
   #linkerkolom {
     background-color: darkgray;
-    grid-area: menu;
+    grid-area: links;
   }
   
   #centrum1 {
     background-color: white;
     grid-area: midden1;
+
   }
   #centrum2 {
     background-color: white;
