@@ -107,7 +107,6 @@ ul li a:hover {
 
 #rechterkolom {
   background-color: var(--medium);
-  ;
   grid-area: fotos;
 }
 
