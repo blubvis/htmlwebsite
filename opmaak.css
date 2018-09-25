@@ -14,13 +14,13 @@
 
 #container {
   display: grid;
-  grid-template-columns: 15% 70% 15%;
+  grid-template-columns: 20% 60% 20%;
   grid-template-rows: 50px 300px 30px 300px 300px 30px;
   grid-template-areas: "menu menu menu"
     "hoofd hoofd hoofd"
     "splitt splitt splitt"
-    "links midden1 fotos"
-    "links midden2 fotos"
+    "midden1 midden1 fotos"
+    "midden2 midden2 fotos"
     "voet voet voet";
 
 }
@@ -30,11 +30,8 @@
 }
 
 body {
-  margin-top: 1vh;
-  margin-bottom: 1vh;
-  margin-left: 1vw;
-  margin-right: 1vw;
-  background: #d8d7d9;
+ 
+  background: white;  
 
 }
 
@@ -89,26 +86,25 @@ ul li a:hover {
   background: #383636
 }
 
-#linkerkolom {
-  background-color: var(--medium);
-  ;
-  grid-area: links;
-}
+
 
 #centrum1 {
   background-color: var(--background);
   grid-area: midden1;
+  margin-left: 5vw;
 
 }
 
 #centrum2 {
   background-color: var(--background);
   grid-area: midden2;
+  margin-left: 5vw;
 }
 
 #rechterkolom {
   background-color: var(--medium);
   grid-area: fotos;
+  margin-right: 5vw; 
 }
 
 #footer {
