@@ -9,23 +9,13 @@
 
 <body>
   <div id="container">
-    <header>
-      <h1>
-        prachtige website
-      </h1>
+    <header>  
     </header>
-    <div id="keuzemenu">
-      <nav>
-        <nav>
-          <ul>
-            <li><a href="pagina2.html">kaas</a></li>
-            <li><a href="#">waarom kaas?</a></li>
-            <li><a href="#">waarom geen worst?</a></li>
-            <li><a href="#">soorten kaas</a></li>
-          </ul>
-        </nav>
-      </nav>
-      </div>
+    <div id="navbar">
+      <a href="index.html">Home</a>
+      <a class="active" href="pagina2.html">News</a>
+      <a href="javascript:void(0)">Contact</a>
+    </div>
     <div id="splitt">
 
     </div>
@@ -43,6 +33,21 @@
 
     </footer>
   </div>
+
+  <script>
+    window.onscroll = function() {myFunction()};
+    
+    var navbar = document.getElementById("navbar");
+    var sticky = navbar.offsetTop;
+    
+    function myFunction() {
+      if (window.pageYOffset >= sticky) {
+        navbar.classList.add("sticky")
+      } else {
+        navbar.classList.remove("sticky");
+      }
+    }
+    </script>
 </body>
 
 </html>
