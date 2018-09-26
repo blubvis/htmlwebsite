@@ -38,7 +38,7 @@ body {
 header {
   grid-area: hoofd;
   background-color: var(--medium);
-  background-image: url("images/robot.png");
+  background-image: url("images/My\ Post.png");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
@@ -91,7 +91,9 @@ ul li a:hover {
 #centrum1 {
   background-color: var(--background);
   grid-area: midden1;
+  margin-right: 10px;
   margin-left: 5vw;
+  margin-top: 10px;
 
 }
 
@@ -99,6 +101,8 @@ ul li a:hover {
   background-color: var(--background);
   grid-area: midden2;
   margin-left: 5vw;
+  margin-right: 10px;
+  margin-top: 10px; 
 }
 
 #rechterkolom {
