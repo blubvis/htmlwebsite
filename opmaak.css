@@ -41,13 +41,8 @@ body {
 
 }
 
-@media only screen and (max-width: 700px) {
-  body {
-    background-color: yellow;
-  }
 
 
-}
 
 header {
   grid-area: hoofd;
@@ -59,13 +54,6 @@ header {
 
 }
 
-header h1 {
-  font-size: 300%;
-  font-family: Georgia, "Times New Roman", Times, serif;
-  color: black;
-  text-align: center;
-
-}
 
 
 #navbar {
@@ -144,7 +132,7 @@ header h1 {
   background-color: var(--dark);
 }
 
-@media only screen and (max-width: 320px) {
+@media only screen and (max-width: 500px) {
   body {
     background-color: green;
   }
@@ -152,7 +140,7 @@ header h1 {
   #container {
     display: grid;
     grid-template-columns: 50% 50%;
-    grid-template-rows: 20px 75px 15px 150px 150px 75px 15px;
+    grid-template-rows: 47.5px 300px 30px 300px 300px 150px 30px;
     grid-template-areas: "menu menu"
       "hoofd hoofd"
       "splitt splitt"
@@ -162,6 +150,18 @@ header h1 {
       "voet voet";
   }
 
+  header {
+    grid-area: hoofd;
+    background-color: var(--medium);
+    background-image: url("images/My\ Post.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+  
+  }
+  
+  
+  
   #navbar {
     overflow: hidden;
     grid-area: menu;
