@@ -192,7 +192,7 @@ header {
   #centrum1 {
     grid-area: midden1;
     background-color: var(--background);
-    margin: 1vh 1vw 1vh 1vw;
+    margin: 1vh 2vw 1vh 2 vw;
     border-radius: 5px 5px 5px 5px;
 
   }
@@ -200,7 +200,8 @@ header {
   #centrum2 {
     grid-area: midden2;
     background-color: var(--background);
-
+    margin: 1vh 2vw 1vh 2vw;
+    border-radius: 5px 5px 5px 5px;
   }
 
   #rechterkolom {
