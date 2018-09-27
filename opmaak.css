@@ -192,7 +192,7 @@ header {
   #centrum1 {
     grid-area: midden1;
     background-color: var(--background);
-    margin: 1vh 2vw 1vh 2 vw;
+    margin: 1vh 2vw 1vh 2vw;
     border-radius: 5px 5px 5px 5px;
 
   }
