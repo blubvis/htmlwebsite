@@ -14,12 +14,13 @@
 #container {
   display: grid;
   grid-template-columns: 20% 60% 20%;
-  grid-template-rows:  100vh 30px 100vh 100vh 30px;
+  grid-template-rows:  100vh 30px 100vh 100vh 100vh 30px;
   grid-template-areas: 
     "hoofd hoofd hoofd"
     "splitt splitt splitt"
     "midden1 midden1 fotos"
     "midden2 midden2 fotos"
+    "midden3 midden3 fotos"
     "voet voet voet";
 }
 
@@ -59,7 +60,7 @@ header {
   }
 
   #navbar {
-    margin-top: 5vh;
+    margin-top: 3vh;
         overflow: hidden;
     position: fixed;
     background-color: var(--header);
@@ -110,6 +111,14 @@ header {
     margin-bottom: 10px;
     border-radius: 10px 10px 10px 10px;
   }
+  #centrum3 {
+    background-color: var(--background);
+    grid-area: midden3;
+    margin-right: 10px;
+    margin-left: 5vw;
+    margin-top: 10px;
+    border-radius: 10px 10px 10px 10px;
+  }
 
   #rechterkolom {
     background-color: var(--medium);
@@ -138,12 +147,13 @@ header {
   #container {
     display: grid;
     grid-template-columns: 50% 50%;
-    grid-template-rows: 200px 200px 30px 300px 300px 150px 30px;
+    grid-template-rows: 200px 200px 30px 300px 300px 300px 150px 30px;
     grid-template-areas: "hoofd hoofd"
       "menu menu"
       "splitt splitt"
       "midden1 midden1"
       "midden2 midden2"
+      "midden3 midden3"
       "fotos fotos"
       "voet voet";
   }
@@ -202,6 +212,12 @@ header {
     margin: 1vh 2vw 1vh 2vw;
     border-radius: 5px 5px 5px 5px;
   }
+  #centrum3 {
+    grid-area: midden3;
+    background-color: var(--background);
+    margin: 1vh 2vw 1vh 2vw;
+    border-radius: 5px 5px 5px 5px;
+
 
   #rechterkolom {
     grid-area: fotos;
