@@ -1,32 +1,33 @@
 <!DOCTYPE HTML>
 <html>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script>
-        $(document).ready(function(){
-          // Add smooth scrolling to all links
-          $("a").on('click', function(event) {
-        
-            // Make sure this.hash has a value before overriding default behavior
-            if (this.hash !== "") {
-              // Prevent default anchor click behavior
-              event.preventDefault();
-        
-              // Store hash
-              var hash = this.hash;
-        
-              // Using jQuery's animate() method to add smooth page scroll
-              // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
-              $('html, body').animate({
-                scrollTop: $(hash).offset().top
-              }, 800, function(){
-           
-                // Add hash (#) to URL when done scrolling (default click behavior)
-                window.location.hash = hash;
-              });
-            } // End if
-          });
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+  $(document).ready(function () {
+    // Add smooth scrolling to all links
+    $("a").on('click', function (event) {
+
+      // Make sure this.hash has a value before overriding default behavior
+      if (this.hash !== "") {
+        // Prevent default anchor click behavior
+        event.preventDefault();
+
+        // Store hash
+        var hash = this.hash;
+
+        // Using jQuery's animate() method to add smooth page scroll
+        // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+        $('html, body').animate({
+          scrollTop: $(hash).offset().top
+        }, 800, function () {
+
+          // Add hash (#) to URL when done scrolling (default click behavior)
+          window.location.hash = hash;
         });
-        </script>
+      } // End if
+    });
+  });
+</script>
+
 <head>
   <meta charset="utf-8">
   <title>Mijn nieuwe website</title>
@@ -35,12 +36,13 @@
 </head>
 
 <body>
-   
+
   <div id="container">
 
     <header id="home"></header>
     <div id="navbar">
-      <a  href="#home" >About me</a>
+      <a href="#home">About me</a>
+      <a href="pagina2.html">blog</a>
       <a href="#centrum1">Recent projects</a>
       <a href="#centrum2">Best projects</a>
       <a href="#centrum3">Contact</a>
@@ -48,7 +50,7 @@
 
     <ul>
       <li><a href="#home">Home</a></li>
-      <li><a href="/pagina2.html">blog</a></li>
+      <li><a href="pagina2.html">blog</a></li>
       <li><a href="#centrum1">News</a></li>
       <li><a href="#centum2">Contact</a></li>
       <li><a href="#about">About</a></li>
@@ -61,10 +63,10 @@
     <article id="centrum2">b
 
     </article>
-  </article>
-  <article id="centrum3">b
+    </article>
+    <article id="centrum3">b
 
-  </article>
+    </article>
 
 
 
@@ -74,9 +76,10 @@
     <footer id="footer">
 
     </footer>
-   
+
   </div>
   </section>
 
 </body>
+
 </html>
