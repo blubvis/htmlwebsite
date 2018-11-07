@@ -2,6 +2,7 @@
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
+  font-family: "roboto", serif;
 }
 
 :root {
@@ -14,8 +15,8 @@
 #container {
   display: grid;
   grid-template-columns: 20% 60% 20%;
-  grid-template-rows:  100vh 30px 100vh 100vh 100vh 30px;
-  grid-template-areas: 
+  grid-template-rows: 100vh 30px 100vh 100vh 100vh 30px;
+  grid-template-areas:
     "hoofd hoofd hoofd"
     "splitt splitt splitt"
     "midden1 midden1 fotos"
@@ -39,7 +40,7 @@ body {
 
 }
 
-article{
+article {
   padding: 1vh 1vw 1vh 1vw;
 }
 
@@ -61,7 +62,7 @@ header {
 
   #navbar {
     margin-top: 3vh;
-        overflow: hidden;
+    overflow: hidden;
     position: fixed;
     background-color: var(--header);
     width: 100vw;
@@ -87,12 +88,25 @@ header {
     color: white;
   }
 
+  #topcolorbar {
+    height: 3vh;
+    background-color: var(--header);
+
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+
+  #colorbar {
+    background-color: var(--header);
+    height: 48px;
+  }
+
   .content {
     padding: 16px;
   }
 
-  
-  
+
+
   #centrum1 {
     background-color: var(--background);
     grid-area: midden1;
@@ -101,6 +115,7 @@ header {
     margin-top: 10px;
     border-radius: 10px 10px 10px 10px;
   }
+
 
   #centrum2 {
     background-color: var(--background);
@@ -111,6 +126,7 @@ header {
     margin-bottom: 10px;
     border-radius: 10px 10px 10px 10px;
   }
+
   #centrum3 {
     background-color: var(--background);
     grid-area: midden3;
@@ -147,7 +163,7 @@ header {
   #container {
     display: grid;
     grid-template-columns: 50% 50%;
-    grid-template-rows: 200px 200px 30px 300px 300px 300px 150px 30px;
+    grid-template-rows: 200px 200px 30px 300px 300px 300px 150px 15px;
     grid-template-areas: "hoofd hoofd"
       "menu menu"
       "splitt splitt"
@@ -198,7 +214,7 @@ header {
     display: none
   }
 
-  #centrum1 {
+  #aboutme {
     grid-area: midden1;
     background-color: var(--background);
     margin: 1vh 2vw 1vh 2vw;
@@ -212,6 +228,7 @@ header {
     margin: 1vh 2vw 1vh 2vw;
     border-radius: 5px 5px 5px 5px;
   }
+
   #centrum3 {
     grid-area: midden3;
     background-color: var(--background);
